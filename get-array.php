@@ -1,5 +1,9 @@
 <?php
-$numbers = $_GET['numbers'];
+/**
+ * Null Coalescing Operator
+ * https://www.php.net/manual/en/migration70.new-features.php
+ */
+$numbers = $_GET['numbers'] ?? [];
 $total = 0;
 
 foreach ($numbers as $number){

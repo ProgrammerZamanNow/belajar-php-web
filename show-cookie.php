@@ -1,5 +1,5 @@
 <?php
 
-$belajarCookie = $_COOKIE['X-BELAJAR-COOKIE'];
+$belajarCookie = $_COOKIE['X-BELAJAR-COOKIE'] ?? null;
 
 echo $belajarCookie;
