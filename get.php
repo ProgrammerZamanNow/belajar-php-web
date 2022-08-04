@@ -1,6 +1,11 @@
 <?php
+$say = $_GET['name'] ?? null;
 
-$say = "Hello " . htmlspecialchars($_GET['name']);
+if(isset($say)) {
+	$say = "Hello " . htmlspecialchars($_GET['name']);
+} else {
+	echo "Butuh parameter 'name'";
+}
 ?>
 <html>
 <body>
